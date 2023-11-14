@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    char nome[2][200];
+    int idades[2];
+    int i;
+
+    for (i = 0; i < 2; i++)
+    {
+        printf("\n digite um nome ");
+        gets(nome[i]);
+
+        printf("digite uma idade");
+        scanf("%d" ,&idades[i]);
+
+        fflush(stdin);
+    }
+    printf(" \n Exibindo dados do usuario.. \n");
+
+    for (i = 0; i < 2; i++)
+    {
+        printf("\nNome: %s \n", nome[i]);
+        printf("Idade: %d \n", idades[i]);
+    }
+
+    return 0;
+}
